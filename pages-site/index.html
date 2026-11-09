@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="sloptube is an open source video platform built in the open, one feature at a time."
+    >
+    <meta name="theme-color" content="#f8faf8">
+    <title>sloptube | Open-source video platform</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #17211b;
+        background: #f8faf8;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #15803d;
+        outline-offset: 4px;
+      }
+
+      .shell {
+        width: min(1080px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 78px;
+        border-bottom: 1px solid #e1e8e1;
+      }
+
+      .wordmark {
+        font-size: 1.35rem;
+        font-weight: 800;
+        letter-spacing: -0.07em;
+        text-decoration: none;
+      }
+
+      .wordmark span {
+        color: #15803d;
+      }
+
+      .source-link {
+        font-size: 0.94rem;
+        font-weight: 700;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      main {
+        padding: 84px 0 76px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: #287044;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #16a34a;
+        content: "";
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 22px 0;
+        font-size: clamp(2.8rem, 8vw, 5.5rem);
+        letter-spacing: -0.075em;
+        line-height: 0.99;
+      }
+
+      h1 span {
+        color: #15803d;
+      }
+
+      .intro {
+        max-width: 660px;
+        color: #526057;
+        font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        border: 1px solid #15803d;
+        border-radius: 8px;
+        background: #15803d;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        border-color: #cbd5ce;
+        background: #fff;
+        color: #17211b;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 76px;
+      }
+
+      .feature {
+        min-height: 150px;
+        padding: 22px;
+        border: 1px solid #e1e8e1;
+        border-radius: 12px;
+        background: #fff;
+      }
+
+      .feature h2 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+      }
+
+      .feature p {
+        margin: 0;
+        color: #526057;
+        line-height: 1.6;
+      }
+
+      .notice {
+        margin-top: 24px;
+        padding: 18px 20px;
+        border-left: 4px solid #16a34a;
+        border-radius: 4px;
+        background: #edf7ef;
+        color: #34443a;
+        line-height: 1.65;
+      }
+
+      .notice strong {
+        color: #17211b;
+      }
+
+      footer {
+        padding: 22px 0 30px;
+        border-top: 1px solid #e1e8e1;
+        color: #647168;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 680px) {
+        main {
+          padding: 62px 0 54px;
+        }
+
+        .features {
+          grid-template-columns: 1fr;
+          margin-top: 52px;
+        }
+
+        .feature {
+          min-height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <a class="wordmark" href="https://github.com/myfilehero/sloptube" aria-label="sloptube on GitHub">
+          <span>slop</span>tube
+        </a>
+        <a class="source-link" href="https://github.com/myfilehero/sloptube">View source on GitHub</a>
+      </header>
+
+      <main>
+        <div class="eyebrow">Open source project</div>
+        <h1>A video platform, built <span>in the open.</span></h1>
+        <p class="intro">
+          sloptube brings together channels, video uploads, a watch page, a home
+          feed, search and Snips in a project made to explore one feature at a time.
+        </p>
+        <div class="actions">
+          <a class="button" href="https://github.com/myfilehero/sloptube">Explore the project</a>
+          <a class="button secondary" href="https://github.com/myfilehero/sloptube#quick-start">Run it yourself</a>
+        </div>
+
+        <section class="features" aria-label="Project highlights">
+          <article class="feature">
+            <h2>Built in the open</h2>
+            <p>Read the code, follow the feature-by-feature roadmap and contribute on GitHub.</p>
+          </article>
+          <article class="feature">
+            <h2>Your own copy</h2>
+            <p>Run the project yourself with Node.js, and connect your own services when you are ready.</p>
+          </article>
+          <article class="feature">
+            <h2>Made for creators</h2>
+            <p>Explore channels, uploads, HLS playback, subscriptions, comments and creator tools.</p>
+          </article>
+        </section>
+
+        <aside class="notice">
+          <strong>This is a project page, not a hosted video service.</strong>
+          GitHub Pages serves this static introduction only. The sloptube application
+          needs a server and your own database and storage setup.
+        </aside>
+      </main>
+
+      <footer>
+        Independent open source project. Not affiliated with YouTube or Google.
+      </footer>
+    </div>
+  </body>
+</html>

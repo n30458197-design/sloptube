@@ -77,6 +77,17 @@ npm run demo                 # http://localhost:3470
 The full setup, with your own database, uploads and a server, is below in
 [Run it yourself](#run-it-yourself).
 
+## Project page on GitHub Pages
+
+The GitHub Pages workflow publishes a static project introduction from
+[`pages-site/`](pages-site/). It is not the sloptube application: the app uses
+server routes, authentication and APIs that GitHub Pages cannot run. To host
+the full app, use a Node.js server; see [Put it on a server](ops/app/README.md).
+
+To enable the project page, open the repository's **Settings > Pages**, choose
+**GitHub Actions** as the build and deployment source, then push to `main`.
+The workflow also supports manual runs from the **Actions** tab.
+
 ## Roadmap
 
 | # | Feature | Status |
